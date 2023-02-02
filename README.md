@@ -1,27 +1,8 @@
-# RAT-SQL
+# Wav2SQL
 
-This repository contains code for the ACL 2020 paper ["RAT-SQL: Relation-Aware Schema Encoding and Linking for Text-to-SQL Parsers"](https://arxiv.org/abs/1911.04942).
+This repository contains code for Wav2SQL.
 
-If you use RAT-SQL in your work, please cite it as follows:
-``` bibtex
-@inproceedings{rat-sql,
-    title = "{RAT-SQL}: Relation-Aware Schema Encoding and Linking for Text-to-{SQL} Parsers",
-    author = "Wang, Bailin and Shin, Richard and Liu, Xiaodong and Polozov, Oleksandr and Richardson, Matthew",
-    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
-    month = jul,
-    year = "2020",
-    address = "Online",
-    publisher = "Association for Computational Linguistics",
-    pages = "7567--7578"
-}
-```
 
-## Changelog
-
-**2020-08-14:**
-- The Docker image now inherits from a CUDA-enabled base image.
-- Clarified memory and dataset requirements on the image.
-- Fixed the issue where token IDs were not converted to word-piece IDs for BERT value linking.  
 
 ## Usage
 
@@ -91,7 +72,6 @@ Use the following experiment config files to reproduce our results:
 * Spider, BERT version (requires a GPU with at least 16GB memory): `experiments/spider-bert-run.jsonnet`
 * WikiSQL, GloVE version: `experiments/wikisql-glove-run.jsonnet`
 
-The exact model accuracy may vary by ±2% depending on a random seed. See [paper](https://arxiv.org/abs/1911.04942) for details.
 
 
 ## Contributing
